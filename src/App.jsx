@@ -1,4 +1,3 @@
-
 import './App.css'
 import About from './components/About';
 import Certifications from './components/Certifications';
