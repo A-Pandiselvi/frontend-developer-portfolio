@@ -4,8 +4,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 py-4 px-6">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+ <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-gray-200 shadow-sm py-4 px-6">
+
+ <div className="max-w-7xl mx-auto flex justify-between items-center">
 
         {/* Logo */}
         <h1 className="text-xl font-bold text-gray-900 tracking-tight">

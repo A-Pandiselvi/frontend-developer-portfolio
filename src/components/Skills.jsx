@@ -20,7 +20,7 @@ const Skills = () => {
             <div
               key={category}
               className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm 
-              hover:shadow-lg transition duration-300"
+              hover:shadow-xl hover:-translate-y-1 transition duration-300"
             >
               {/* Category Title */}
               <h3 className="text-xl font-bold text-blue-600 mb-6">

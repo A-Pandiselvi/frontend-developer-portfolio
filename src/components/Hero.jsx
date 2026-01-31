@@ -5,9 +5,12 @@ const Hero = () => {
 
         <div className="lg:w-1/2 text-center lg:text-left">
           
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
             Pandi Selvi
           </h1>
+<p className="text-gray-500 mb-4 font-medium">
+  Based in India 🇮🇳 | Open to Frontend Developer Roles
+</p>
 
           <h2 className="text-2xl font-semibold text-blue-600 mb-6">
             Frontend Developer
@@ -26,7 +29,7 @@ const Hero = () => {
               className="bg-blue-600 text-white px-8 py-3 rounded-full font-bold 
               hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg"
             >
-              Download Resume
+             ⬇️ Download Resume
             </a>
 
             <a
@@ -34,7 +37,7 @@ const Hero = () => {
               className="border border-blue-600 text-blue-600 px-8 py-3 rounded-full 
               font-bold hover:bg-blue-50 transition duration-300"
             >
-              Contact Me
+             📩 Contact Me
             </a>
 
           </div>

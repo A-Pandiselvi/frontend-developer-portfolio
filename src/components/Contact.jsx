@@ -19,7 +19,7 @@ const Contact = () => {
             className="bg-gray-50 p-6 rounded-2xl border border-gray-200 
             hover:bg-blue-50 transition font-bold text-blue-600"
           >
-            Email
+           📩 Email
           </a>
 
           {/* LinkedIn */}
@@ -30,7 +30,7 @@ const Contact = () => {
             className="bg-gray-50 p-6 rounded-2xl border border-gray-200 
             hover:bg-blue-50 transition font-bold text-blue-600"
           >
-            LinkedIn
+            🔗 LinkedIn
           </a>
 
           {/* GitHub */}
@@ -41,7 +41,7 @@ const Contact = () => {
             className="bg-gray-50 p-6 rounded-2xl border border-gray-200 
             hover:bg-blue-50 transition font-bold text-blue-600"
           >
-            GitHub
+            💻 GitHub
           </a>
 
         </div>

@@ -6,4 +6,9 @@ html {
 
 body {
   @apply bg-white text-gray-900 antialiased;
+  font-family: "Inter", sans-serif;
+}
+
+section {
+  scroll-margin-top: 100px;
 }
