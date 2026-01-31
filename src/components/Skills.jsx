@@ -1,8 +1,24 @@
+import { Code2, Wrench, Layers, CheckCircle } from "lucide-react";
+
 const Skills = () => {
   const skills = {
-    Frontend: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS"],
-    Tools: ["Git & GitHub", "Figma", "Vite"],
-    Core: ["API Integration", "Responsive Design", "Role-Based UI", "Dashboard Development"],
+    Frontend: {
+      icon: <Code2 size={26} className="text-blue-600" />,
+      items: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS"],
+    },
+    Tools: {
+      icon: <Wrench size={26} className="text-blue-600" />,
+      items: ["Git & GitHub", "Figma", "Vite", "Postman"],
+    },
+    Core: {
+      icon: <Layers size={26} className="text-blue-600" />,
+      items: [
+        "API Integration",
+        "Responsive Design",
+        "Role-Based UI",
+        "Dashboard Development",
+      ],
+    },
   };
 
   return (
@@ -16,25 +32,28 @@ const Skills = () => {
 
         {/* Skill Cards */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {Object.entries(skills).map(([category, items]) => (
+          {Object.entries(skills).map(([category, data]) => (
             <div
               key={category}
               className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm 
-              hover:shadow-xl hover:-translate-y-1 transition duration-300"
+              hover:bg-blue-50 hover:shadow-xl hover:-translate-y-1 transition duration-300"
             >
               {/* Category Title */}
-              <h3 className="text-xl font-bold text-blue-600 mb-6">
-                {category}
-              </h3>
+              <div className="flex items-center gap-3 mb-6">
+                {data.icon}
+                <h3 className="text-xl font-bold text-gray-900">
+                  {category}
+                </h3>
+              </div>
 
               {/* Skills List */}
-              <ul className="space-y-3">
-                {items.map((skill) => (
+              <ul className="space-y-4">
+                {data.items.map((skill) => (
                   <li
                     key={skill}
                     className="text-gray-700 flex items-center font-medium"
                   >
-                    <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
+                    <CheckCircle size={18} className="text-blue-600 mr-3" />
                     {skill}
                   </li>
                 ))}
