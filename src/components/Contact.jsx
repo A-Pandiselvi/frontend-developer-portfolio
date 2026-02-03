@@ -31,7 +31,7 @@ const Contact = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/pandi-selvi-335328283/"
+            href="https://www.linkedin.com/in/pandiselvi-pavi"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-3 bg-gray-50 p-6 rounded-2xl 
